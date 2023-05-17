@@ -11,7 +11,7 @@
     "docker:run": "docker run --rm -it -p 3000:3000 thinkful-ed/zid-pf-project-loc-library-01-qualified-assignment",
     "docker:stop": "docker stop $(docker ps -q)",
     "docker:test": "docker run -i thinkful-ed/zid-pf-project-loc-library-01-qualified-assignment npm test",
-    "start": "live-server public/",
+    "start": "live-server",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "mocha test/*.test.js",
     "test:solution": "npm run docker:build && npm run docker:test"
